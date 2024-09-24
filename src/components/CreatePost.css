@@ -1,0 +1,86 @@
+.create-post {
+  max-width: 700px;
+  margin: 50px auto;
+  padding: 30px;
+  background-color: #f9f9f9; /* Soft background color */
+  border-radius: 12px; /* Rounded corners */
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+  transition: box-shadow 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.create-post:hover {
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3); /* Darker shadow on hover */
+}
+
+.create-post h1 {
+  font-size: 2.5rem; /* Larger font size for heading */
+  color: #388e3c; /* A deep green color */
+  text-align: center; /* Centered heading */
+  margin-bottom: 25px; /* Space below the heading */
+  font-family: 'Roboto', sans-serif; /* Clean font */
+}
+
+.create-post form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* Space between form elements */
+}
+
+.create-post label {
+  font-weight: bold; /* Bold labels for clarity */
+  color: #333; /* Dark color for labels */
+}
+
+.create-post input,
+.create-post textarea {
+  font-size: 1rem; /* Base font size */
+  padding: 12px; /* Padding for comfort */
+  border: 1px solid #ccc; /* Light border color */
+  border-radius: 8px; /* Rounded borders */
+  background-color: #fff; /* White background for inputs */
+  transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions */
+}
+
+.create-post input:focus,
+.create-post textarea:focus {
+  border-color: #4CAF50; /* Green border on focus */
+  box-shadow: 0 0 8px rgba(76, 175, 80, 0.3); /* Glowing effect */
+  outline: none; /* Remove default outline */
+}
+
+.create-post button {
+  background-color: #4CAF50; /* Green background */
+  color: white; /* White text */
+  padding: 15px; /* Comfortable padding */
+  font-size: 1.2rem; /* Larger button text */
+  border: none; /* No border */
+  border-radius: 8px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor */
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transitions */
+}
+
+.create-post button:hover {
+  background-color: #388e3c; /* Darker green on hover */
+  transform: translateY(-2px); /* Slight lift effect */
+}
+
+.create-post button:active {
+  background-color: #2e7d32; /* Even darker when clicked */
+  transform: translateY(0); /* Button presses down */
+}
+
+.create-post p {
+  color: red; /* Error message color */
+  font-weight: bold; /* Bold for emphasis */
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .create-post {
+      padding: 20px; /* Adjust padding for smaller screens */
+  }
+
+  .create-post h1 {
+      font-size: 2rem; /* Smaller heading on mobile */
+  }
+}
